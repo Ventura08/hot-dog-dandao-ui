@@ -15,8 +15,8 @@ const App = ({ className }: AppProps): ReactElement => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Header><WhoDo /></Header>} />
-        <Route path="/what-we-do" element={<WhatWeDo />} />
-        <Route path="/where-are-we" element={<WhereAreWe />} />
+        <Route path="/what-we-do" element={<Header><WhatWeDo /></Header>} />
+        <Route path="/where-are-we" element={<Header><WhereAreWe /></Header>} />
       </Routes>
     </BrowserRouter>
   )
